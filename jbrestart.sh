@@ -3,6 +3,7 @@
 die() {
     echo ""
     echo "[?] bye"
+    echo ""
     exit 0
 }
 
@@ -26,7 +27,10 @@ removeCacheAndFiles() {
     rm -rf ./.config/JetBrains
     rm -rf ./.cache/JetBrains
 
-    die()
+    echo ""
+    echo "[+] Cache files removed"
+
+    die
 
 }
 
